@@ -11,7 +11,7 @@
 | # | Item | Status | Evidence |
 |---|------|--------|----------|
 | 01 | Env variables configured on platform | | |
-| 02 | Build passes locally | ✅ PASS | `npm run build` — dist/ 173.02 kB in 3.00s |
+| 02 | Build passes locally | ✅ PASS | `npm run build` — dist/ 173.02 kB in 939ms (36 modules transformed) |
 | 03 | Build passes in CI | | |
 | 04 | DB migrations executed | | |
 | 05 | CORS verified | | |
