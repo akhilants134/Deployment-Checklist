@@ -17,7 +17,7 @@
 | 05 | CORS verified | | |
 | 06 | API base URL correct in production | | |
 | 07 | Auth flow tested in production | | |
-| 08 | Health endpoint responding | | |
+| 08 | Health endpoint responding | ⏳ PENDING | Health endpoint added to backend/index.js — awaiting deployment verification with curl /health |
 | 09 | No secrets in Git | ✅ PASS | `git log --all --oneline -- .env` returns 0 results; `.gitignore` contains .env patterns |
 | 10 | .env.example committed | ✅ PASS | File exists in repo at commit 6a05c52 with all required env vars |
 | 11 | Node version pinned | ✅ PASS | Added `"engines": { "node": ">=18.0.0" }` to backend/package.json |
