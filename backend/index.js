@@ -19,8 +19,10 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
 
-// GAP 1 - Health endpoint missing (Item 08)
-// Students discovery: curl /health will return 404 until they add the route.
+// Health endpoint (Item 08)
+app.get('/health', (req, res) => {
+  res.json({ status: 'ok', timestamp: new Date().toISOString() });
+});
 
 // Default Catch-all
 app.use((req, res) => {
