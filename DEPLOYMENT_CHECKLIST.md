@@ -21,7 +21,7 @@
 | 09 | No secrets in Git | ✅ PASS | `git log --all --oneline -- .env` returns 0 results; `.gitignore` contains .env patterns |
 | 10 | .env.example committed | ✅ PASS | File exists in repo at commit 6a05c52 with all required env vars |
 | 11 | Node version pinned | ✅ PASS | Added `"engines": { "node": ">=18.0.0" }` to backend/package.json |
-| 12 | Docker image builds locally | ⏭️ SKIP | Dockerfile created but local build failed due to Docker Desktop I/O errors (system issue, not code issue). Application can be deployed directly from GitHub to platform without Docker. |
+| 12 | Docker image builds locally | ✅ PASS | `docker build -t launchpad-backend .` — Successfully built in 59.0s, image launchpad-backend:latest created |
 
 ---
 
